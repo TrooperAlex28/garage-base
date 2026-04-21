@@ -42,6 +42,10 @@
           linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       img {
         max-width: 100%;
         display: block;
@@ -215,22 +219,22 @@
     <header>
       <div class="logo">Votre Logo</div>
       <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Services</a>
-        <a href="#">À propos</a>
-        <a href="#">Contact</a>
+        <a href="#home">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="home">
       <h1>Votre entreprise, votre présence web</h1>
       <p>Votre slogan ou votre message principal ici</p>
-      <a href="#" class="btn">Demander une soumission</a>
+      <a href="#contact" class="btn">Contactez-nous</a>
     </section>
 
     <!-- SERVICES -->
-    <section>
+    <section class="services" id="services">
       <h2>Vos services</h2>
       <div class="grid">
         <div class="card">
@@ -251,7 +255,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section>
+    <section class="about" id="about">
       <h2>À propos de vous</h2>
       <p>
         Présentez votre entreprise, votre mission et vos valeurs ici. Parlez de
@@ -260,7 +264,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contactez-nous</h2>
 
       <p>Email : votre@email.com</p>
